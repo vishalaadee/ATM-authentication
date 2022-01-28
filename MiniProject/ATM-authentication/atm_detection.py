@@ -125,7 +125,7 @@ v_cap.release()
 cv2.destroyAllWindows()
 accuracy=(sum(face_results)/len(face_results))*100
 print('Percentage match '+'{:.2f}'.format(accuracy))
-if accuracy>0.75:
+if accuracy>75:
     print('Authorization Successful')
 else:
     print('Authorization Unsuccessful')
